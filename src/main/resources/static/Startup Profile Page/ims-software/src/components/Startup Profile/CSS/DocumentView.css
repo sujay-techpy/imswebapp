@@ -1,0 +1,56 @@
+#documentView {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.12rem;
+  position: fixed;
+  top: 3rem;
+  width: -webkit-fill-available;
+  height: -moz-fit-content;
+  z-index: 2;
+}
+
+#documentView::before {
+  background-color: #000;
+  content: "";
+  position: fixed;
+  top: 0rem;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.documentView-Box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 45rem;
+  height: 40rem;
+}
+
+.documentView-pageDiv {
+  display: flex;
+  justify-content: center;
+  width: 40rem;
+  height: 100%;
+}
+
+.documentView-crossBtnDiv {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 2.18rem;
+  height: 100%;
+}
+
+.documentView-crossBtnDiv i {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: #525659;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 1;
+}

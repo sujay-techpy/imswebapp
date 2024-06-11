@@ -1,0 +1,435 @@
+.startupProfileAddCompany {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 2rem;
+}
+
+/* Company Details */
+.startupProfile-sections {
+  display: grid;
+  grid-template-columns: 480px 480px;
+  grid-template-rows: repeat(8);
+  grid-row-gap: 10px;
+  grid-column-gap: 50px;
+  width: 1040px;
+  height: fit-content;
+  padding: 15px 15px;
+}
+
+.startupProfile-input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+}
+
+.startupProfile-input-box-childDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  height: fit-content;
+  padding: 0.1rem 0rem;
+}
+
+.startupProfile-input-box-childDiv label {
+  margin-right: 20px;
+  color: #697077;
+}
+
+.startupProfile-input-box-childDiv input[type="text"] {
+  background-color: #f2f4f8;
+  border-bottom: 1px solid #c7ccd2;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  padding: 0px 10px;
+}
+
+.startupProfile-input-box-childDiv input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.startupProfile-input-box-childDiv input[type="date"] {
+  background-color: #f2f4f8;
+  border-bottom: 1px solid #c7ccd2;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  padding: 0px 10px;
+}
+
+.startupProfile-input-box-time {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.startupProfile-input-box-childDiv input[type="time"] {
+  width: 14.5rem;
+  background-color: #f2f4f8;
+  border-bottom: 1px solid #c7ccd2;
+  font-size: 16px;
+  height: 48px;
+  padding: 0px 10px;
+}
+
+.startupProfile-input-box-childDiv
+  input[type="date"]::-webkit-calendar-picker-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 25%);
+}
+
+.startupProfile-input-box-childDiv
+  input[type="time"]::-webkit-calendar-picker-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 25%);
+}
+
+.startupProfile-view-input {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  padding-left: 10px;
+  background-color: white;
+  border: 2px solid #c1c7cd;
+  margin-right: 10px;
+}
+
+.startupProfile-input-box-childDiv i {
+  position: absolute;
+  right: 0.7rem;
+  top: 2.8rem;
+  font-size: 16px;
+}
+
+.startupProfile-input-box-childDiv input::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.startupProfile-input-box-childDiv select {
+  appearance: none;
+  background-color: white;
+  border: 1px solid #c7ccd2;
+  font-size: 15px;
+  width: 100%;
+  height: 48px;
+  padding: 0px 10px;
+}
+
+.startupProfile-input-box-childDiv select option {
+  color: black;
+}
+
+.addCompany-input-heading {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+
+.addCompany-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f4f8;
+  border-bottom: 1px solid #c7ccd2;
+  width: 100%;
+  height: 48px;
+  padding: 0px 10px;
+}
+
+.addCompany-image span {
+  font-size: 16px;
+  color: #697077;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+
+.addCompany-image > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 25%);
+}
+
+.addCompany-image > div i {
+  margin-right: 1%;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.company-name {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.company-address {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* Other Information */
+.otherInfo-section {
+  border-top: 1px solid #c7ccd2;
+}
+
+.otherInfo-heading {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: fit-content;
+}
+
+.otherInfo-heading h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Employee List */
+.startupProfile-list-section {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #c7ccd2;
+  width: 65rem;
+  height: fit-content;
+  padding: 0.93rem 0.93rem;
+}
+
+.startupProfile-list-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  border-bottom: 1px solid #dddddd;
+  padding: 0rem 1rem;
+}
+
+.upload-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 25%);
+  cursor: pointer;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  height: 3.81rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.action i {
+  margin: 0.2rem;
+}
+
+.trash {
+  color: red;
+}
+
+.status_other_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  height: 3.81rem;
+}
+
+.approve {
+  background-color: white;
+  width: 70px;
+  height: fit-content;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  border: 2px solid #332a7c;
+  cursor: pointer;
+}
+
+.reject {
+  background-color: white;
+  width: 70px;
+  height: fit-content;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.approve_icon {
+  color: #0e9d1c;
+  font-size: 1.5rem;
+}
+
+.reject_icon {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.list-headingBox {
+  background-color: #e3f9f9;
+}
+
+.list-headingBox span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.startupProfile-list-box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 0.87rem;
+}
+
+.startupProfile-name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.assetSharing-name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.startupProfile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 100%;
+  margin-right: 0.6rem;
+}
+
+.startupProfile-img img {
+  width: fit-content;
+  height: 2.5rem;
+}
+
+.assets-img {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f2f4f8;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+  margin-left: 1.5rem;
+  border-radius: 20.3rem;
+}
+
+.assets-img img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.startupProfile-empList-table {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 4px rgba(67, 67, 67, 0.25);
+  width: 100%;
+}
+
+/* Button Section */
+.startupProfile-btn-box {
+  display: flex;
+  justify-content: flex-end;
+  width: 65rem;
+  height: fit-content;
+  padding: 0.93rem 0.93rem;
+}
+
+.startupProfile-btn-box button {
+  background-color: white;
+  width: 10.18rem;
+  height: 2.5rem;
+  margin-left: 1.87rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.startupProfile-input-box-radio {
+  display: flex;
+  width: 100%;
+}
+
+.startupProfile-input-box-radio > div {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.companyLogoPreview-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  width: fit-content;
+  height: 40px;
+  padding: 0rem 0.5rem;
+}
+
+.companyLogoPreview-logo {
+  max-width: "fit-content";
+  height: "2rem";
+  margin-right: "1rem";
+}
+
+.addEmployee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.errorMassage {
+  color: red;
+  font-size: 0.85rem;
+}
+
+.mandatoryStar {
+  color: red;
+}

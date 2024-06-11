@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  height: 65px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.navbar .logo-details {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #332a7c;
+  background: repeating-linear-gradient(0deg, #332a7c, #1e1741 93px);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .logo-details i {
+  font-size: 30px;
+  color: whitesmoke;
+  height: 50px;
+  width: 99px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navbar .logo-details i:hover {
+  cursor: pointer;
+}
+
+.navbar .logo-details i:hover .logo-details span {
+  background-color: white;
+}
+
+.navbar .logo-details span {
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  /* width: 180px; */
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .header-wrapper {
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 1px 4px #6b6a6a69;
+}
+
+.navbar .header-wrapper .title span {
+  font-size: 14px;
+}
+
+.navbar .header-wrapper .search {
+  display: flex;
+}
+
+.navbar .header-wrapper .search .search-box {
+  margin-right: 70px;
+  width: 40rem;
+  height: 35px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 30%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+}
+
+.navbar .header-wrapper .search .search-box i {
+  font-size: 1.3rem;
+}
+
+.navbar .header-wrapper .search .search-box input {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.navbar .header-wrapper .search .notification {
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc2cf;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.navbar .header-wrapper .search .notification i {
+  font-size: 1rem;
+}
+
+.navbar .header-wrapper .search .profile {
+  width: 35px;
+  height: 35px;
+  margin-right: 1%;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc2cf;
+  cursor: pointer;
+}
+
+.navbar .header-wrapper .search .profile i {
+  font-size: 1rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 500;
+  width: 99px;
+}

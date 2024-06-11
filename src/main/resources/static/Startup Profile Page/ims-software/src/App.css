@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: unset;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
+}
+.main_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0rem;
+  top: 4.2rem;
+  width: 82%;
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
